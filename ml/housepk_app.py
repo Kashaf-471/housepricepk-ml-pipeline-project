@@ -62,6 +62,14 @@ print("Dashboard module loaded")
 def dashboard():
     return "User Dashboard - Under development"
 
+
+print("API module loaded")
+
+@app.route('/api/predict', methods=[ 'POST'])
+def api_predict():
+    return "Prediction api - Under development"
+
+
 @app.route("/predict", methods=["POST"])
 def predict():
     # build input vector in same order as feature_list
