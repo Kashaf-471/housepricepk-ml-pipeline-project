@@ -65,9 +65,9 @@ def dashboard():
 
 print("API module loaded")
 
-@app.route('/api/predict', methods=[ 'POST'])
-def api_predict():
-    return "Prediction api - Under development"
+@app.route('/api/dashboard', methods=[ 'POST'])
+def api_dashboard():
+    return "Dashboard api - Under development"
 
 
 @app.route("/predict", methods=["POST"])
