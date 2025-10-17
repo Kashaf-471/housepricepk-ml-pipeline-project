@@ -55,6 +55,13 @@ def register():
 @app.route('/logout', methods=['GET'])
 def logout():
     return "Logout functionality - Under development"
+
+print("Dashboard module loaded")
+
+@app.route('/dashboard', methods=['GET', 'POST'])
+def dashboard():
+    return "User Dashboard - Under development"
+
 @app.route("/predict", methods=["POST"])
 def predict():
     # build input vector in same order as feature_list
