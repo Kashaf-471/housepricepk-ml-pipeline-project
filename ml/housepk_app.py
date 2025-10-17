@@ -42,6 +42,19 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 def index():
     return render_template("index.html", feature_meta=feature_meta)
 
+print("Authentication module loaded")
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    return "Login page - Under development"
+
+@app.route('/register', methods=['GET', 'POST'])  
+def register():
+    return "Registration page - Under development"
+
+@app.route('/logout', methods=['GET'])
+def logout():
+    return "Logout functionality - Under development"
 @app.route("/predict", methods=["POST"])
 def predict():
     # build input vector in same order as feature_list
